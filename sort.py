@@ -161,7 +161,7 @@ def check_type(full_path):
     for i in return_type.keys():
         if full_path.lower().endswith(i):
             return return_type[i]
-    return "misc_path"  #stores the file in miscellaneous path 
+    return "misc_path"  #stores the file in misc path 
 
 def check_directory(path):
     return os.path.isdir(os.path.join(parent_path,path)) or check_type(path) == "NULL"
